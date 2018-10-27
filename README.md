@@ -27,14 +27,6 @@ boilerplate mvp android
 - [ButterKnife](http://jakewharton.github.io/butterknife/)
 - [RxJava](https://github.com/ReactiveX/RxJava)
 
-### Technology Stack (Tablet) :
-- [Kotlin Programming](https://kotlinlang.org/)
-- [Kotlin Android Extensions](https://kotlinlang.org/docs/tutorials/android-plugin.html)
-- [Kotlin Kapt](https://blog.jetbrains.com/kotlin/2015/05/kapt-annotation-processing-for-kotlin/)
-- [Kotlin AllOpen (Based on Kotlin 1.0.6)](https://blog.jetbrains.com/kotlin/2016/12/kotlin-1-0-6-is-here/)
-- [Anko](https://github.com/Kotlin/anko)
-- [RxKotlin](https://github.com/ReactiveX/RxKotlin)
-
 ### Support Libraries
 - [Joda Time](http://www.joda.org/joda-time/)
 - [CircleImageView](https://github.com/hdodenhof/CircleImageView)
