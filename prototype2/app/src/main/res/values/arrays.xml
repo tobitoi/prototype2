@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <!-- DASHBOARD FILTER -->
+    <string-array name="dashboard">
+        <item>Custom Range</item>
+        <item>Today</item>
+        <item>This Week</item>
+        <item>This Month</item>
+        <item>This Quarter</item>
+        <item>This Year</item>
+    </string-array>
+
+    <!-- OPTIONS -->
+    <string-array name="optionsicon">
+        <item>@null</item>
+        <item>@mipmap/ic_list</item>
+        <item>@mipmap/ic_home</item>
+        <item>@mipmap/ic_person</item>
+        <item>@mipmap/ic_language</item>
+        <item>@null</item>
+        <item>@mipmap/ic_books</item>
+        <item>@mipmap/ic_chat</item>
+    </string-array>
+    <string-array name="optionstext">
+        <item>@string/text_settings</item>
+        <item>@string/text_companies</item>
+        <item>@string/text_company</item>
+        <item>@string/text_account</item>
+        <item>@string/text_language</item>
+        <item>@string/text_helpsupport</item>
+        <item>@string/text_guidebook</item>
+        <item>@string/text_support</item>
+    </string-array>
+
+    <!-- LANGUAGES -->
+    <string-array name="languages">
+        <item>@string/text_english</item>
+        <item>@string/text_bahasa</item>
+    </string-array>
+
+    <!-- BALANCESHEET FILTER -->
+    <string-array name="asper">
+        <item>@string/text_asper_customrange</item>
+        <item>@string/text_asper_today</item>
+        <item>@string/text_asper_thisweek</item>
+        <item>@string/text_asper_thismonth</item>
+        <item>@string/text_asper_thisyear</item>
+        <item>@string/text_asper_yesterday</item>
+        <item>@string/text_asper_lastweek</item>
+        <item>@string/text_asper_lastmonth</item>
+        <item>@string/text_asper_lastyear</item>
+    </string-array>
+    <string-array name="compareperiods">
+        <item>@string/text_filter_none</item>
+        <item>@string/text_compareperiods_weekly</item>
+        <item>@string/text_compareperiods_monthly</item>
+        <item>@string/text_compareperiods_quarterly</item>
+        <item>@string/text_compareperiods_semiyearly</item>
+        <item>@string/text_compareperiods_yearly</item>
+    </string-array>
+    <string-array name="filterfor">
+        <item>@string/text_filter_none</item>
+        <item>@string/text_for_previousoneperiods</item>
+        <item>@string/text_for_previoustwoperiods</item>
+        <item>@string/text_for_previousthreeperiods</item>
+        <item>@string/text_for_previousfourperiods</item>
+        <item>@string/text_for_previousfiveperiods</item>
+    </string-array>
+    <string-array name="filterbyaccountdepth">
+        <item>@string/text_filter_none</item>
+        <item>@string/text_filterbyaccountdepth_one</item>
+        <item>@string/text_filterbyaccountdepth_two</item>
+        <item>@string/text_filterbyaccountdepth_three</item>
+        <item>@string/text_filterbyaccountdepth_four</item>
+    </string-array>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".internal.views.home.HomeActivity"
+    tools:targetApi="LOLLIPOP">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/abl_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/green50400"
+                android:elevation="4dp"
+                android:minHeight="?attr/actionBarSize">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/AppTheme.Toolbar"
+                    app:popupTheme="@style/AppTheme.ToolbarMenu"
+                    app:titleTextAppearance="@style/AppTheme.ToolbarTitle">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/ic_logo" />
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.AppBarLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/abl_home" />
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_navigation"
+            android:background="@color/green50400"/>
+
+</RelativeLayout>

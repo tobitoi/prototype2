@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- APPLICATION SIDE MENU -->
+    <integer name="menu_dashboard">1</integer>
+    <integer name="menu_reports">2</integer>
+    <integer name="menu_cashbank">3</integer>
+    <integer name="menu_sales">4</integer>
+    <integer name="menu_purchases">5</integer>
+    <integer name="menu_expenses">6</integer>
+    <integer name="menu_customers">7</integer>
+    <integer name="menu_vendors">8</integer>
+    <integer name="menu_products">9</integer>
+    <integer name="menu_assets">10</integer>
+    <integer name="menu_chartofaccounts">11</integer>
+    <integer name="menu_otherlists">12</integer>
+    <integer name="menu_options">13</integer>
+    <integer name="menu_logout">14</integer>
+</resources>

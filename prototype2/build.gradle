@@ -1,0 +1,100 @@
+buildscript {
+    ext {
+        // Kotlin
+        kotlinVersion = '1.0.6'
+
+        // Android Support
+        androidPluginVersion = '2.2.3'
+        androidSupportVersion = '25.1.0'
+        androidSupportTestVersion = '0.5'
+        multidexVersion = '1.0.1'
+
+        // APT
+        neenbedanktVersion = '1.8'
+
+        // Dagger
+        daggerVersion = '2.8'
+
+        // ButterKnife
+        butterKnifeVersion = '8.4.0'
+
+        // Anko
+        ankoVersion = '0.9'
+
+        // ReactiveX
+        rxAndroidVersion = '1.2.1'
+        rxJavaVersion = '1.2.4'
+        rxKotlinVersion = '0.60.0'
+        rxProguardRulesVersion = '1.2.4.0'
+
+        // Retrofit
+        retrofitVersion = '2.1.0'
+        okHttpVersion = '3.5.0'
+
+        // Parceler
+        parcelerVersion = '1.1.6'
+
+        // Realm
+        realmVersion = '2.3.0'
+
+        // Glide
+        glideVersion = '3.7.0'
+
+        // Unit Test
+        jUnitVersion = '4.12'
+        mockitoVersion = '2.5.4'
+
+        // Instrumentation Test
+        espressoVersion = '2.2.2'
+
+        // JodaTime
+        jodaTimeVersion = '2.9.7'
+
+        // Others
+        circleImageViewVersion = '2.1.0'
+        mpAndroidChartVersion = 'v3.0.1'
+        statelessSectionVersion = '1.0.4'
+
+        // Fabric SDK
+        fabricVersion = '1.+'
+        crashlyticsVersion = '2.9.5+@aar'
+    }
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+        jcenter()
+    }
+    dependencies {
+        // Kotlin
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
+        classpath("org.jetbrains.kotlin:kotlin-allopen:${kotlinVersion}")
+
+        // Android Support
+        classpath('com.android.tools.build:gradle:3.0.1')
+
+        // APT
+        classpath("com.neenbedankt.gradle.plugins:android-apt:${neenbedanktVersion}")
+
+        // Realm
+        classpath("io.realm:realm-gradle-plugin:${realmVersion}")
+
+        //noinspection GradleDynamicVersion
+        classpath("io.fabric.tools:gradle:${fabricVersion}")
+
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url "https://jitpack.io" }
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.3'
+}

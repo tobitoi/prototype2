@@ -1,0 +1,53 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tpm.tobitoi.prototype">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="com.tpm.tobitoi.prototype.internal.App"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.tpm.tobitoi.prototype.internal.views.splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Splash"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="my.jurnal.id"
+                    android:pathPrefix="/mobile"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tpm.tobitoi.prototype.internal.views.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Login"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name="com.tpm.tobitoi.prototype.internal.views.home.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- FABRIC SDK -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="49361bebf8966625f3d6619f724ba3bdb416e76b" />
+    </application>
+</manifest>

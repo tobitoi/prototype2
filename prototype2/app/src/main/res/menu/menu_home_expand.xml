@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group_companies" />
+    <group android:id="@+id/group_options">
+        <item
+            android:id="@+id/action_options"
+            android:checkable="false"
+            android:checked="false"
+            android:icon="@mipmap/ic_settings"
+            android:orderInCategory="@integer/menu_options"
+            android:title="@string/menu_options" />
+    </group>
+    <group android:id="@+id/group_exit">
+        <item
+            android:id="@+id/action_logout"
+            android:checkable="false"
+            android:checked="false"
+            android:icon="@mipmap/ic_exit_app"
+            android:orderInCategory="@integer/menu_logout"
+            android:title="@string/menu_logout" />
+    </group>
+</menu>
