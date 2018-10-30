@@ -9,7 +9,7 @@ boilerplate mvp android
     Build Tools Version 25.0.2
     Java 1.7
 
-### Technology Stack (Both Smartphone and Tablet)
+### Technology Stack (Both Smartphone)
 - [Android Support Design](https://developer.android.com/topic/libraries/support-library/features.html)
 - [Realm Database](https://realm.io/)
 - [Fabric SDK](https://fabric.io)
